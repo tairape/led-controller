@@ -5,10 +5,11 @@ Here is the list of materials used for building the LED controller.
 - 1x Arduino board + USB cable
 - 1x Pontentiometer
 - 12x Arcade buttons
-- Jumpers
+- 12x Plugs
 - 4x Relay module
-- 4x Spacers M3 35mm
+- 4x Spacers M3 55mm
 - M3 screws
+- Jumpers
 - Wires
 - 1 enclosure
 
