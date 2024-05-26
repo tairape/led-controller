@@ -1,18 +1,22 @@
-# webseries-rooftop-blynk
-This is a repository of the lighting project that will be located on the roof of the Samambaia Complex.
+# led controller
+Here is the list of materials used for building the LED controller.
 
 # List of materials
 - 1x Arduino board + USB cable
-- 1x Protoboard
+- 1x Pontentiometer
+- 12x Arcade buttons
 - Jumpers
-- 1x ESP8266 WiFi Module
-- 1x ESP8266 Adapter
 - 4x Relay module
+- 4x Spacers M3 35mm
+- M3 screws
+- Wires
+- 1 enclosure
 
 # Circuit
-![circuit](https://github.com/tairape/webseries-rooftop/assets/8051211/93e80001-fcd7-4a0d-9548-ceda5ee2490b)
-![circuit_2](https://github.com/tairape/webseries-rooftop/assets/8051211/5896ae0a-40c0-4fe5-9c1d-ebdad7d84fa2)
-![IMG_8528](https://github.com/tairape/webseries-rooftop-blynk/assets/8051211/dd694f1e-6b0d-4c99-95fe-c4985dc43533)
-![IMG_8529](https://github.com/tairape/webseries-rooftop-blynk/assets/8051211/d3280483-7334-45ff-952e-a70ccd0579e0)
-![IMG_8530](https://github.com/tairape/webseries-rooftop-blynk/assets/8051211/50d2e577-69ef-41a3-975c-85509c3760e6)
-![IMG_8531](https://github.com/tairape/webseries-rooftop-blynk/assets/8051211/32e133d3-7054-4ac4-b517-445eaf5fbd11)
+
+![led-controller-schematic](https://github.com/tairape/webseries/assets/8051211/356f1c55-6b43-4434-96b2-9dbe100fe9fb)
+![IMG_8655](https://github.com/tairape/webseries/assets/8051211/de38f007-f89d-4508-968a-4e3b4fb841b0)
+![IMG_8654](https://github.com/tairape/webseries/assets/8051211/3a1eb863-e0cc-44e6-bbce-23a0b7fff7cf)
+![IMG_8653](https://github.com/tairape/webseries/assets/8051211/60d57f9c-ab34-4fe4-86e9-d02e2d801b31)
+![IMG_8652](https://github.com/tairape/webseries/assets/8051211/69cb0bcb-7a18-459b-b182-18c9aa23a034)
+![IMG_8651](https://github.com/tairape/webseries/assets/8051211/b4d9a457-d522-4ae6-93e1-681aa5435ef3)
