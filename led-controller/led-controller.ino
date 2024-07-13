@@ -1,6 +1,6 @@
 #include <SerialRelay.h>  //inclui biblioteca do Modulo Rele Serial
 
-const int NumModules = 3;  // Número máximo de módulos
+const int NumModules = 2;  // Número máximo de módulos
 
 const int ButtonPin2 = 2;    // Pinagem do primeiro botão
 const int ButtonPin3 = 3;    // Pinagem do segundo botão
@@ -21,11 +21,13 @@ int PauseTime = 100;  // Intervalo padrão entre operações de relês
 
 bool stopExecution = false;  // Variável para controlar a interrupção dos loops
 
-SerialRelay relays(A5, A4, NumModules);  //definicao da pinagem de data e clock do modulo, e da quantidade de modulos
+SerialRelay relays(A4, A5, NumModules);  //definicao da pinagem de data e clock do modulo, e da quantidade de modulos
 
 // -----------------------------------------
 
 void setup() {
+  Serial.begin(9600);
+
   pinMode(ButtonPin2, INPUT_PULLUP);   // Configura como entrada com resistor pull-up interno
   pinMode(ButtonPin3, INPUT_PULLUP);   // Configura como entrada com resistor pull-up interno
   pinMode(ButtonPin4, INPUT_PULLUP);   // Configura como entrada com resistor pull-up interno
@@ -104,6 +106,7 @@ void loop() {
 }
 
 void tairapeLoop() {
+  Serial.println("Iniciando tairapeLoop");
   // Liga e desliga relês sequencialmente
   for (int i = 1; i <= NumModules; i++) {
     for (int j = 1; j <= 4; j++) {
@@ -143,6 +146,7 @@ void tairapeLoop() {
 }
 
 void cndsdLoop() {
+  Serial.println("Iniciando cndsdLoop");
   // https://www.instagram.com/cndsd/
   // Loop principal
   int numOperations = random(5, 15);  // Número aleatório de operações
@@ -177,6 +181,7 @@ void cndsdLoop() {
 }
 
 void ztaaLoop() {
+  Serial.println("Iniciando ztaaLoop");
   // https://www.ztaa.xyz
   // Loop principal
   const int waveLength = 4;   // Comprimento da "onda" de luz
@@ -225,6 +230,7 @@ void ztaaLoop() {
 }
 
 void DeadDreamsLoop() {
+  Serial.println("Iniciando DeadDreamsLoop");
   // https://www.instagram.com/deaddreamsjp/
   // Padrão 1: Onda de acionamento dos relés
   for (int t = 0; t < 4; t++) {
@@ -329,6 +335,7 @@ void DeadDreamsLoop() {
 }
 
 void nonotakLoop() {
+  Serial.println("Iniciando nonotakLoop");
   // http://nonotak.com
   // Loop principal
   for (int t = 0; t < 2; t++) {
@@ -431,6 +438,7 @@ void nonotakLoop() {
 }
 
 void _404ZeroLoop() {
+  Serial.println("Iniciando _404ZeroLoop");
   // http://404.zero
   // Loop principal
   for (int t = 0; t < 3; t++) {
@@ -530,6 +538,7 @@ void _404ZeroLoop() {
 }
 
 void tundraLoop() {
+  Serial.println("Iniciando tundraLoop");
   // https://wearetundra.org
   // Loop principal
   for (int t = 0; t < 3; t++) {
@@ -618,6 +627,7 @@ void tundraLoop() {
 }
 
 void ikedaLoop() {
+  Serial.println("Iniciando ikedaLoop");
   // https://www.ryojiikeda.com
   // Loop principal
   for (int t = 0; t < 2; t++) {
@@ -681,6 +691,7 @@ void ikedaLoop() {
 }
 
 void _1024Loop() {
+  Serial.println("Iniciando _1024Loop");
   // https://www.1024architecture.net
   static bool sequential = true;  // Variável para controlar se a sequência é sequencial ou randômica
   // Loop principal
@@ -743,6 +754,7 @@ void _1024Loop() {
 }
 
 void hikariLoop() {
+  Serial.println("Iniciando hikariLoop");
   // https://www.hikarimune.com
   // Loop principal
   for (int t = 0; t < 3; t++) {
@@ -793,6 +805,7 @@ void hikariLoop() {
 }
 
 void changLoop() {
+  Serial.println("Iniciando changLoop");
   // https://hsiinyu.com
   // Loop principal
   for (int t = 0; t < 3; t++) {
